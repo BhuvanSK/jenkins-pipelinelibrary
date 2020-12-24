@@ -1,15 +1,23 @@
-# jenkins-pipelinelibrary
+### Jenkins Shared Library and Workflows project
+
+Read **[Extending with Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/)**
+  - <https://jenkins.io/doc/book/pipeline/shared-libraries/>
 
 
+#### Directory  Structure
+```
 (root)
 +- src                     # Groovy source files
 |   +- org
-|       +- foo
-|           +- Bar.groovy  # for org.foo.Bar class
+|       +- tr
+|           +- cpjenkins    
+|               +- Pipeline.groovy  # for org.tr.cpjenkins.Pipeline class
 +- vars
-|   +- foo.groovy          # for global 'foo' variable
-|   +- foo.txt             # help for 'foo' variable
-+- resources               # resource files (external libraries only)
+|   +- build.groovy             # for global variables in jenkins
+|   +- test.groovy              
++- resources                    # resource files (external libraries only)
 |   +- org
-|       +- foo
-|           +- bar.json    # static helper data for org.foo.Bar
+|       +- tr
+|           +- cpjenkins
+|               +- settings.xml  # resources
+```
